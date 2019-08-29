@@ -1,109 +1,112 @@
 button:focus {
-    outline: none; /*tira a cor do focus*/
+  outline: none; /*tira a cor do focus*/
 }
 
 .gallery-container {
-    margin: 10px auto; /*auto = centraliza container*/
-    width: 1360px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+  margin: 10px auto; /*auto = centraliza container*/
+  width: 1360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.gallery-container > div { /*pega as divs filhas do gallery*/
-    width: 250px;
-    height: 380px;
-    margin: 10px;
-    background-color: #363636;
-    border: 1px solid gray;
-    border-radius: 5px;
-    
-    overflow: hidden; /*esconder o que sai do corpo da div, a capa do filme*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.gallery-container > div {
+  /*pega as divs filhas do gallery*/
+  width: 250px;
+  height: 380px;
+  margin: 10px;
+  background-color: #363636;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  overflow: hidden; /*esconder o que sai do corpo da div, a capa do filme*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .img-legend {
-    width: 100%;
-    height: 70px;
-    background-color: rgba(0,0,0,0.7);/*red,green,black,alpha*/
-    position: absolute;
-    bottom: 0;  /*posicionando na parte inferior*/
-    color: white; /*cor para as palavras*/
-    border-radius: 5px;
-    display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.7); /*red,green,black,alpha*/
+  position: absolute;
+  bottom: 0; /*posicionando na parte inferior*/
+  color: white; /*cor para as palavras*/
+  border-radius: 5px;
+  display: flex;
 }
 
 .img-legend div.text-legend {
-    white-space: nowrap; /*não quebra a linha se tiver mais texto*/
-    overflow: hidden; /*esconde o texto*/
+  white-space: nowrap; /*não quebra a linha se tiver mais texto*/
+  overflow: hidden; /*esconde o texto*/
 }
 
 .text-legend {
-    flex: 4;
-    padding: 5px 0px;
+  flex: 4;
+  padding: 5px 0px;
 }
 
-.img-legend div h4, h6 {
-    margin: 4px 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.img-legend div h4,
+h6 {
+  margin: 4px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .more-details {
-    flex: 1;
+  flex: 1;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .more-details button {
-    background-color: #e72f85;
-    border: 0px;
-    border-radius: 20px;
-    width: 37px;
-    height: 37px;
-    color: white;
-    font-size: 35px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
+  background-color: #e72f85;
+  border: 0px;
+  border-radius: 20px;
+  width: 37px;
+  height: 37px;
+  color: white;
+  font-size: 35px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.more-details button:hover {    /*quando o mouse estiver em cima*/
-    background-color: #e5bace;
-    color: #e72f85;
+.more-details button:hover {
+  /*quando o mouse estiver em cima*/
+  background-color: #e5bace;
+  color: #e72f85;
 }
 
 .more-details button span {
-    margin-top: -2px;
-    font-weight: 600;
+  margin-top: -2px;
+  font-weight: 600;
 }
 
-@media only screen and (min-width: 1360px ) {
-    .gallery-container {
-        width: 1360px;
-    }
+@media only screen and (min-width: 1360px) {
+  .gallery-container {
+    width: 1360px;
+  }
 }
-@media only screen and (max-width: 1359px ) {
-    .gallery-container {
-        width: 816px;
-    }
-}
-
-@media only screen and (max-width: 815px ) {
-    .gallery-container {
-        width: 544px;
-    }
+@media only screen and (max-width: 1359px) {
+  .gallery-container {
+    width: 816px;
+  }
 }
 
-@media only screen and (max-width: 543px ) {
-    .gallery-container {
-        width: 272px;
-    }
+@media only screen and (max-width: 815px) {
+  .gallery-container {
+    width: 544px;
+  }
+}
+
+@media only screen and (max-width: 543px) {
+  .gallery-container {
+    width: 272px;
+  }
 }

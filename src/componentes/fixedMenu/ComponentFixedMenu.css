@@ -1,43 +1,43 @@
 .fixed-menu {
-    height: 70px;
-    width: 100%;
-    background-color: rgba(97, 61, 155, 0.7);
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(97, 61, 155, 0.7);
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .fixed-menu div {
-    margin: 10px;
+  margin: 10px;
 }
 
 .logo-content {
-    border-right: 1px solid white;
-    padding: 0px 30px;
+  border-right: 1px solid white;
+  padding: 0px 30px;
 }
 
 .menu-content {
-    padding-right: 30px;
-    display: flex;
+  padding-right: 30px;
+  display: flex;
 }
 
 .menu-content button {
-    background-color: transparent;
-    border: 0px;
-    border-radius: 20px;
-    width: auto; /*respeita o conteúdo*/
-    height: 37px;
-    font-size: 16px;
-    font-weight: 200;
-    padding: 0px, 10px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    color: white;
+  background-color: transparent;
+  border: 0px;
+  border-radius: 20px;
+  width: auto; /*respeita o conteúdo*/
+  height: 37px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 0px, 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
 }
 
 .menu-content button:hover {
-    background-color: #e72f85;
+  background-color: #e72f85;
 }
