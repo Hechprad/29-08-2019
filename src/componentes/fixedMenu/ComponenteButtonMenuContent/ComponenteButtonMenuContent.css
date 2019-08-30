@@ -1,0 +1,18 @@
+.menu-content button {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 20px;
+  width: auto; /*respeita o conteúdo*/
+  height: 37px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 0px, 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-content button:hover {
+  background-color: #e72f85;
+}
