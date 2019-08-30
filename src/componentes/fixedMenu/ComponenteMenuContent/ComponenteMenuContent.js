@@ -4,11 +4,33 @@ import "./ComponenteMenuContent.css";
 // import do ComponenteButtonMenuContent
 import ComponenteButtonMenuContent from "../ComponenteButtonMenuContent/ComponenteButtonMenuContent.js";
 
+// array de objeto botão com o nome e o link
+const propriedadesDoBotao = [{
+  idDoBotao: 0,
+  nomeParaBotao: "Categoria",
+  linkParaBotao: "/categorias.html",
+  target: "_self"
+},
+{
+  idDoBotao: 1,
+  nomeParaBotao: "AdicionarFilme",
+  linkParaBotao: "/filme",
+  target: "_blank"
+}];
+
 const ComponenteMenuContent = () => {
   return (
     <div className="menu-content">
-      <ComponenteButtonMenuContent buttonName="Categoria"/>
-      <ComponenteButtonMenuContent buttonName="Adicionar Filme"/>
+      {propriedadesDoBotao.map(element => {
+        return (
+        <ComponenteButtonMenuContent 
+          key={element.idDoBotao}
+          buttonName={element.nomeParaBotao}
+          link={element.linkParaBotao}
+          target={element.target}
+        />
+        )
+      })}
     </div>
   );
 };
